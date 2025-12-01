@@ -1,0 +1,6 @@
+Should I implement any of these? I can start with:
+Database persistence (SQLite)
+Personality switcher UI
+Proper system instructions in the model
+Streaming responses
+Image upload support
