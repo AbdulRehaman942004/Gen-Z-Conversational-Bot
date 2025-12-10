@@ -12,12 +12,12 @@ load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 # -----------------------------------------
-# 2. Choose the model (Gemini 1.5 / Flash)
+# 2. Choose the model (Gemini 2.5 / Flash)
 # -----------------------------------------
 
 # Create the model
 # Note: system_instruction is not supported in this version, so we'll handle it in app.py
-model = genai.GenerativeModel("models/gemini-2.0-flash")
+model = genai.GenerativeModel("models/gemini-2.5-flash")
 
 # Store the system instruction to be used when starting chats
 SYSTEM_INSTRUCTION = """
