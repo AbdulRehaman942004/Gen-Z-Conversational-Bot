@@ -35,10 +35,7 @@ function parseMarkdown(text) {
 
 function App() {
   // Authentication state
-  const [user, setUser] = useState(() => {
-    const savedUser = localStorage.getItem('user')
-    return savedUser ? JSON.parse(savedUser) : null
-  })
+  const [user, setUser] = useState(null) // always start on login screen
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [currentPage, setCurrentPage] = useState('chat') // 'home', 'chats', 'aimodes', 'settings', 'chat'
 
