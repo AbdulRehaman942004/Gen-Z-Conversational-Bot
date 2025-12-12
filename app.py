@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify, Response, stream_with_context
 from flask_cors import CORS
-from APIs.gemini_api import client, model, SYSTEM_INSTRUCTION, get_personality_instruction, PERSONALITIES
+from APIs.groq_api import client, model, SYSTEM_INSTRUCTION, get_personality_instruction, PERSONALITIES
 import json
 
 app = Flask(__name__)
